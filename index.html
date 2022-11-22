@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- MMMMMMMMMMMMMMMMMMMMMMMMM navbar for large screens MMMMMMMMMMMMMMMMMMMMMMMMM -->
     <nav
-      class="d-lg-flex justify-content-around pt-3 d-no flex-column flex-lg-row w-100 position-fixed"
+      class="d-lg-flex justify-content-around pt-3 d-no flex-column flex-lg-row w-100 position-fixed d-none"
     >
       <div class="d-flex justify-content-around">
         <span class="text-primary fs-4 fw-bold pe-5">Prepnepal</span>
@@ -33,7 +34,7 @@
         <a
           href="#R"
           role="button"
-          class="btn btn-outline-primary rounded-pill px-4 fw-bold me-2"
+          class="btn btn btn-light text-primary rounded-pill px-4 fw-bold me-2"
           >LOGIN</a
         >
 
@@ -46,6 +47,38 @@
       </form>
     </nav>
 
+    <!-- MMMMMMMMMMMMMMMMMMMMMMMMM hero part MMMMMMMMMMMMMMMMMMMMMMMMM -->
+    <main class="pt">
+      <section
+        class="bg-secondary container px-lg-5 px-2 shadow-lg"
+        style="border-radius: 20px"
+      >
+        <div class="row px-lg-5 px-2">
+          <div class="align-items-center col-lg-6 col-12 px-lg-5 px-2">
+            <h1 class="text-light py-3">
+              Welcome to Prepnepal. <br />
+              prepare with confidence.
+            </h1>
+            <p class="text-light py-3">
+              Excel every exam with our high yield MCQ's
+            </p>
+            <button
+              type="button"
+              class="btn btn-light px-3 rounded-pill text-primary"
+            >
+              LIVE EXAMPLES
+            </button>
+          </div>
+          <div class="col-12 col-lg-6 pt-4 pt-lg-0 py-4 py-lg-0">
+            <img
+              src="assets/first project-img.jpg"
+              alt="hero-image"
+              class="w-100 h-100"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- MMMMMMMMMMMMMMMMMMMMMMMMM -->
     <script src="bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
