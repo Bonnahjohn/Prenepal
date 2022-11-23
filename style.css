@@ -4,8 +4,20 @@ body {
   box-sizing: border-box;
 }
 nav {
-  /* background-color: deepskyblue; */
+  background-color: white;
+  z-index: 9999;
+  transition: all 3s;
 }
+
+nav.fix {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
+  box-shadow: 5px 2px 2px 15px rgba(0, 0, 0, 0);
+}
+.fix ul li a {
+  color: white;
+}
+
 .pt {
   padding-top: 6%;
 }
