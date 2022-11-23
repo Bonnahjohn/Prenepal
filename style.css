@@ -4,8 +4,18 @@ body {
   box-sizing: border-box;
 }
 nav {
-  background-color: deepskyblue;
+  /* background-color: deepskyblue; */
 }
 .pt {
-  padding-top: 7%;
+  padding-top: 6%;
+}
+
+ul li a:hover {
+  color: yellow !important;
+  font-size: 14px;
+  transition: all 2s;
+}
+
+h1 {
+  letter-spacing: 1px;
 }
