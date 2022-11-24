@@ -47,20 +47,64 @@
       </form>
     </nav>
     <!-- MMMMMMMMMMMMMMMMMMMMMMMMM navbar for small screens MMMMMMMMMMMMMMMMMMMMMMMMM -->
+    <header
+      class="navbar navbar-expand-lg d-lg-none d-block px-2 w-100 position-fixed px-2 pt-3"
+      style="z-index: 99999"
+    >
+      <div class="container-fluid">
+        <span class="fs-5 fw-bolder text-primary">PREPNEPAL</span>
 
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="list-unstyled d-flex flex-column flex-lg-row text-center">
+            <li class="nav-item">
+              <a href="#t" class="nav-link link-dark fw-bold">TEST</a>
+            </li>
+            <li class="nav-item">
+              <a href="#c" class="nav-link link-dark fw-bold">COURSES</a>
+            </li>
+          </ul>
+          <form class="signUpi justify-content-center d-flex">
+            <a
+              href="#R"
+              role="button"
+              class="btn btn-light text-primary rounded-pill px-4 fw-bold me-2"
+              >LOGIN</a
+            >
+
+            <a
+              href="#R"
+              role="button"
+              class="btn btn-primary rounded-pill px-4 ms-2"
+              >SIGN UP</a
+            >
+          </form>
+        </div>
+      </div>
+    </header>
     <!-- MMMMMMMMMMMMMMMMMMMMMMMMM hero part MMMMMMMMMMMMMMMMMMMMMMMMM -->
     <main class="pt">
       <section
-        class="container px-lg-5 px-2 shadow-lg"
-        style="border-radius: 20px; background-color: rgb(77, 156, 235)"
+        class="container px-lg-5 px-2 shadow-lg bg-primary"
+        style="border-radius: 20px"
       >
-        <div class="row px-lg-5 px-2">
-          <div class="align-items-center col-lg-6 col-12 px-lg-5 px-2">
-            <h1 class="text-light py-3">
+        <div class="row px-lg-5 px-3">
+          <div class="align-items-center col-lg-6 col-12 px-lg-5 px-2 pt-5">
+            <h1 class="text-light py-4">
               Welcome to Prepnepal. <br />
               prepare with confidence.
             </h1>
-            <p class="text-light py-3">
+            <p class="text-light py-3 pb-5">
               Excel every exam with our high yield MCQ's
             </p>
             <button
@@ -72,19 +116,25 @@
           </div>
           <div class="col-12 col-lg-6 pt-4 pt-lg-0 py-4 py-lg-0">
             <img
-              src="assets/first project-img.jpg"
+              src="assets/hero-image.jpg"
               alt="hero-image"
-              class="w-100 h-100"
+              class="h-100 hero d-lg-block d-none"
+            />
+            <!-- mobile -->
+            <img
+              src="assets/hero-image.jpg"
+              alt="hero-image"
+              class="h-100 image d-lg-none d-block w-100"
             />
           </div>
         </div>
       </section>
 
-      <!-- MMMMMMMMMMMMMMMMMMMMMMMMMder neath of hero MMMMMMMMMMMMMMMMMMMMMMMMM -->
+      <!-- MMMMMMMMMMMMMMMMMMMMMMMMM under neath of hero MMMMMMMMMMMMMMMMMMMMMMMMM -->
       <section class="container px-2 px-lg-5 pt-4">
         <h3 class="text-center">What we offer</h3>
         <!--mmmmmmmmmmmm cards of what we offer mmmmmmmmmmmmmmmm-->
-        <div class="row pt-5">
+        <div class="row pt-5 px-lg-5 px-2">
           <div class="card border-0 col-12 col-lg-4">
             <strong class="display-4 text-center text-primary"
               ><i class="fas fa-file"></i
@@ -156,7 +206,7 @@
           </p>
 
           <!--mmmmmmmmmmmmm cards showing our students mmmmmmmmmmmmmmm-->
-          <div class="container px-lg-5 px-2 pt-4">
+          <div class="container px-lg-5 px-2 pt-4 d-lg-block d-none">
             <div class="row px-lg-5 px-2">
               <div class="col-lg-1 mt-5 pt-3 px-5">
                 <button type="button" class="btn btn-light">
@@ -170,9 +220,9 @@
                   <div class="d-flex">
                     <div class="col-lg-2 pb-5">
                       <img
-                        src="assets/first project-img.jpg"
-                        alt=""
-                        style="width: 90%; border-radius: 20%"
+                        src="assets/studen-1.jpg"
+                        alt="student saying-1"
+                        style="width: 60%; border-radius: 20%"
                       />
                     </div>
                     <div class="col-lg-10">
@@ -193,9 +243,9 @@
                   <div class="d-flex">
                     <div class="col-lg-2 pb-5">
                       <img
-                        src="assets/first project-img.jpg"
-                        alt=""
-                        style="width: 90%; border-radius: 20%"
+                        src="assets/student-2.jpg"
+                        alt="student saying-2"
+                        style="width: 80%; border-radius: 20%"
                       />
                     </div>
                     <div class="col-lg-10">
@@ -265,7 +315,7 @@
         </p>
         <!--mmmmmmmmmmmmmmmmmmmmmm cards of pricing on large screens only mmmmmmmmmmmmmmm-->
         <div
-          class="d-lg-flex justify-content-around flex-column flex-lg-row px-lg-5 px-2 d-none pt-5"
+          class="d-lg-flex justify-content-around flex-column flex-lg-row px-lg-5 px-2 d-none pt-5 mx-lg-5"
         >
           <div
             class="card align-items-center w-25 py-4 px-2"
@@ -393,10 +443,15 @@
           >
             Practice with Prepnep.
           </h3>
-          <p class="text-center text-light">
+          <p class="text-center text-light d-lg-block d-none">
             Lorem ipsum dolor elit. In, maxime delectus nihil sunt!
             <br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <!-- mobile -->
+          <p class="text-center text-light d-lg-none d-block">
+            Lorem ipsum dolor elit. In, maxime delectus nihil sunt! Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
           </p>
 
           <div class="pt-3">
@@ -417,12 +472,12 @@
       </div>
 
       <footer class="container px-lg-5 px-2 pt-3">
-        <div class="row">
-          <div class="col-3 col-lg-6">
+        <div class="row mx-lg-5 px-lg-5">
+          <div class="col-6 col-lg-6">
             <h5 class="text-primary">Prepnepal</h5>
           </div>
           <!--mmmmmmmmmmmmm second footer mmmmmmmmmmmmm-->
-          <div class="col-3 col-lg-2">
+          <div class="col-6 col-lg-2">
             <h5 class="text-primary">Services</h5>
             <ol class="list-unstyled py-2">
               <li>
@@ -436,7 +491,7 @@
             </ol>
           </div>
           <!--mmmmmmmmmmmmm third footer mmmmmmmmmmmmm-->
-          <div class="col-3 col-lg-2">
+          <div class="col-6 col-lg-2">
             <h5 class="text-primary">Company</h5>
             <ol class="list-unstyled text-dark py-2">
               <li>
@@ -459,7 +514,7 @@
             </ol>
           </div>
           <!--mmmmmmmmmmmmm FOURTH footer mmmmmmmmmmmmm-->
-          <div class="col-3 col-lg-2">
+          <div class="col-6 col-lg-2">
             <h5 class="text-primary">Social</h5>
             <ol class="list-unstyled text-dark py-2">
               <li>
@@ -482,7 +537,7 @@
         </div>
         <div class="row">
           <div class="col-7 col-lg-10">
-            <h6 class="fst-italic fw-light">Made with love by Bonnah John</h6>
+            <h6 class="fst-italic fw-light">Made with ❤❤ by Bonnah John</h6>
           </div>
 
           <div class="col-5 col-lg-2">

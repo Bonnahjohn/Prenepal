@@ -2,8 +2,24 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
+/* mobile nav mmmmmmmmmmmmmmm*/
+header {
+  background-color: white;
+  transition: all 3s;
+}
+header.change {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+.change ul li a {
+  color: white;
+}
+.change .fa-bars {
+  color: blue;
+  font-size: 22px;
+}
 /*mmmmmmmmmmmfans-bg navbar mmmmmmmmmmmmm */
 nav {
   background-color: white;
@@ -37,4 +53,19 @@ h1 {
 
 .fans-bg {
   background-color: rgba(245, 237, 237, 0.918);
+}
+
+@media screen and (max-width: 768px) {
+  .pt {
+    padding-top: 19%;
+  }
+  .hero {
+    width: 0 !important;
+  }
+}
+/* image */
+.hero {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 120% !important;
 }
