@@ -12,8 +12,8 @@ nav {
   height: 7vh;
 }
 
-nav.fix {
-  background-color: rgba(0, 0, 0, 0.2);
+.fix {
+  background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
   /* box-shadow: 5px 2px 2px 15px rgba(0, 0, 0, 0.1); */
 }
